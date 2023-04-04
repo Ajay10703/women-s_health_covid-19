@@ -1,5 +1,40 @@
 .card-header{background-color:#b42424 ;}
-
+ul{
+	padding-left: 0px;
+}
+ul li { list-style: none; 
+display: flex;}
+ul li:not(:last-child){
+  margin-bottom: 5px;
+}
+ul li:before{
+	content: "\2714";
+    color: #fff;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+display: block;
+    background: #b42424;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 25px;
+}
+li a{
+	word-wrap: break-word;
+}
+@media (max-width: 1900px){
+ul li:before {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+}}
+@media (max-width:768px){
+	p{
+		text-align: justify;
+	}
+}
 /**************************/
 /*     General Styles     */
 /**************************/
@@ -988,6 +1023,7 @@ a.navbar-brand.logo-image { width: 100%; text-align: center; margin: 0; }
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 10px;
 }
 .slider .card-image {
 	width: 6rem;
@@ -1676,14 +1712,14 @@ a:hover.back-to-top {
 	}
 	/* end of statement */
 
-	.basic-4{
+	/* .basic-4{
 		margin: 4rem 0;
-	}
+	} */
 	/* Author */
-	.basic-4 .text-container {
-		/* margin-top: 4rem; */
+	/* .basic-4 .text-container {
+		margin-top: 4rem; 
 		margin-left: 1rem;
-	}
+	} */
 	/* end of author */
 
 
